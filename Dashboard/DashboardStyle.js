@@ -1,0 +1,131 @@
+import {StyleSheet, Dimensions} from 'react-native';
+import {hp, wp} from '../../Constant';
+import {Colors} from '../../Theme';
+const tabWidth = 200;
+export default StyleSheet.create({
+  container: {
+    backgroundColor: Colors.whiteColor,
+    flex: 1,
+  },
+  bottomimagesSize: {
+    width: hp(3),
+    height: hp(3),
+    alignSelf: 'center',
+    // backgroundColor: 'red',
+  },
+  bottomTabTex: {fontSize: wp(2), alignSelf: 'center', textAlign: 'center'},
+  bottomTabView: {
+    width: wp(15.5),
+    height: hp(8),
+    margin: hp(1),
+
+    justifyContent: 'center',
+  },
+  linearTaps: {
+    width: wp(9),
+    // backgroundColor: 'white',
+    height: wp(9),
+    overflow: 'hidden',
+    // left: wp(1.9),
+    // backgroundColor:'red',
+    // justifyContent: 'center',
+    alignItems: 'center',
+  },
+  linearRow: {
+    flexDirection: 'row',
+    // justifyContent: 'space-around',
+    alignItems: 'center',
+    height: wp(14),
+    width: '100%',
+    alignSelf: 'center',
+    backgroundColor: '#fafafb',
+    borderTopWidth: 1,
+    borderColor: '#cfd1d3',
+  },
+  linearText: {
+    fontSize: wp(4.2),
+    width: '95%',
+    alignSelf: 'center',
+    paddingTop: wp(3),
+  },
+  multipleText: {fontSize: wp(4.2), paddingVertical: wp(1)},
+  detailsRow: {
+    width: '95%',
+    alignSelf: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  imageStyle: {
+    width: hp(4.5),
+    height: hp(4.5),
+    alignSelf: 'center',
+  },
+  pagesTaps: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    // backgroundColor: 'pink',
+    width: wp(90),
+  },
+  imageTapView: {
+    overflow: 'hidden',
+    backgroundColor: Colors.dashboardIconBack,
+    width: hp(12.5),
+    height: hp(12.5),
+    // margin: wp(2),
+    justifyContent: 'center',
+    borderRadius: wp(2),
+    margin: hp(0.5),
+    // marginTop: hp(2.4),
+  },
+  seperator: {
+    width: '99%',
+    alignSelf: 'center',
+    borderWidth: wp(0.125),
+    borderColor: 'grey',
+  },
+  image: {
+    height: '100%',
+    width: '100%',
+    alignSelf: 'center',
+  },
+  bannerText: {
+    color: Colors.whiteColor,
+    fontSize: hp(3),
+    width: wp(90),
+    textAlign: 'center',
+    alignSelf: 'center',
+    // fontWeight: 'bold',
+    // backgroundColor: 'red',
+  },
+  employeeBannerText: {
+    color: Colors.whiteColor,
+    fontWeight: 'bold',
+    fontSize: wp(6),
+  },
+  dashboardIconText: {
+    alignSelf: 'center',
+    textAlign: 'center',
+    // marginTop: wp(1),
+    // padding: wp(2),
+    // paddingTop
+    fontSize: hp(1.5),
+  },
+  tab: {
+    width: tabWidth,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#ccc',
+    margin: 5,
+  },
+  arrow: {
+    width: 40,
+    // height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    // position: 'absolute',
+    // top: 0,
+  },
+});
